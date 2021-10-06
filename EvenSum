@@ -1,0 +1,33 @@
+import java.util.*;
+public class Even
+{
+      public static void main(String args[])
+	 {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter no.of queries");
+		int q=sc.nextInt();
+		for(int i=0;i<q;i++)
+		{
+			System.out.println("enter n value");
+			int n=sc.nextInt();
+			int sum=0;
+			for(int j=0;j<=2*n;j+=2)
+			{
+				sum=sum+j;
+			}
+			System.out.println("sum of " +n+ " even no's is  "+sum);
+		}		
+	}
+}
+
+****************************************************************************************************
+
+OUTPUT:---
+enter no.of queries
+2
+enter n value
+3
+sum of 3 even no's is  12
+enter n value
+2
+sum of 2 even no's is  6
